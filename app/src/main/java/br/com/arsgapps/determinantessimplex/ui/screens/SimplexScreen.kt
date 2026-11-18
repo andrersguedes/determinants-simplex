@@ -11,7 +11,6 @@ import androidx.compose.material3.*
 import androidx.compose.runtime.*
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
-import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.text.input.KeyboardType
 import androidx.compose.ui.tooling.preview.Preview
@@ -28,7 +27,6 @@ import br.com.arsgapps.determinantessimplex.ui.theme.DeterminantesSimplexTheme
 fun SimplexScreen(
     onBack: () -> Unit
 ) {
-    val context = LocalContext.current
     var c1 by remember { mutableStateOf("3") }
     var c2 by remember { mutableStateOf("5") }
 
@@ -90,7 +88,7 @@ fun SimplexScreen(
                 OutlinedTextField(
                     value = c1,
                     onValueChange = { c1 = it },
-                    label = { Text("c₁") },
+                    label = { Text(stringResource(R.string.c1)) },
                     singleLine = true,
                     keyboardOptions = KeyboardOptions(keyboardType = KeyboardType.Number),
                     modifier = Modifier.weight(1f)
@@ -98,7 +96,7 @@ fun SimplexScreen(
                 OutlinedTextField(
                     value = c2,
                     onValueChange = { c2 = it },
-                    label = { Text("c₂") },
+                    label = { Text(stringResource(R.string.c2)) },
                     singleLine = true,
                     keyboardOptions = KeyboardOptions(keyboardType = KeyboardType.Number),
                     modifier = Modifier.weight(1f)
@@ -120,7 +118,7 @@ fun SimplexScreen(
                 OutlinedTextField(
                     value = a11,
                     onValueChange = { a11 = it },
-                    label = { Text("a₁₁") },
+                    label = { Text(stringResource(R.string.a11)) },
                     singleLine = true,
                     keyboardOptions = KeyboardOptions(keyboardType = KeyboardType.Number),
                     modifier = Modifier.weight(1f)
@@ -128,7 +126,7 @@ fun SimplexScreen(
                 OutlinedTextField(
                     value = a12,
                     onValueChange = { a12 = it },
-                    label = { Text("a₁₂") },
+                    label = { Text(stringResource(R.string.a12)) },
                     singleLine = true,
                     keyboardOptions = KeyboardOptions(keyboardType = KeyboardType.Number),
                     modifier = Modifier.weight(1f)
@@ -137,7 +135,7 @@ fun SimplexScreen(
                 OutlinedTextField(
                     value = b1,
                     onValueChange = { b1 = it },
-                    label = { Text("b₁") },
+                    label = { Text(stringResource(R.string.b1)) },
                     singleLine = true,
                     keyboardOptions = KeyboardOptions(keyboardType = KeyboardType.Number),
                     modifier = Modifier.weight(1f)
@@ -153,7 +151,7 @@ fun SimplexScreen(
                 OutlinedTextField(
                     value = a21,
                     onValueChange = { a21 = it },
-                    label = { Text("a₂₁") },
+                    label = { Text(stringResource(R.string.a21)) },
                     singleLine = true,
                     keyboardOptions = KeyboardOptions(keyboardType = KeyboardType.Number),
                     modifier = Modifier.weight(1f)
@@ -161,7 +159,7 @@ fun SimplexScreen(
                 OutlinedTextField(
                     value = a22,
                     onValueChange = { a22 = it },
-                    label = { Text("a₂₂") },
+                    label = { Text(stringResource(R.string.a22)) },
                     singleLine = true,
                     keyboardOptions = KeyboardOptions(keyboardType = KeyboardType.Number),
                     modifier = Modifier.weight(1f)
@@ -170,7 +168,7 @@ fun SimplexScreen(
                 OutlinedTextField(
                     value = b2,
                     onValueChange = { b2 = it },
-                    label = { Text("b₂") },
+                    label = { Text(stringResource(R.string.b2)) },
                     singleLine = true,
                     keyboardOptions = KeyboardOptions(keyboardType = KeyboardType.Number),
                     modifier = Modifier.weight(1f)

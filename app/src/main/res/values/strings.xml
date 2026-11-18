@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-
     <string name="app_name">Determinantes e Simplex</string>
     <string name="matrix_info_prompt">Informe os valores da matriz</string>
     <string name="det2">Determinante 2 x 2</string>
@@ -28,7 +27,7 @@
 
     <string name="theory_det2_title">Determinante de Matriz 2x2</string>
     <string name="theory_det2_text">O determinante de uma matriz quadrada de ordem 2 é calculado pela diferença entre o produto dos elementos da diagonal principal e o produto dos elementos da diagonal secundária.\n\nFórmula:\nDet = (a₁₁ · a₂₂) - (a₁₂ · a₂₁)</string>
-    <string name="example_det2_text">Exemplo Prático:\nMatriz A = [[1, 2], [3, 4]]\nDet = (1 · 4) - (2 · 3) = 4 - 6 = -2.</string>
+    <string name="example_det2_text">Exemplo Prático:\nMatriz A = [[1, 2], [3, 4]]\nDet = (1 · 4) – (2 · 3) = 4 – 6 = -2.</string>
 
     <string name="theory_det3_title">Determinante de Matriz 3x3</string>
     <string name="theory_det3_text">Para matrizes 3x3, pode-se utilizar a Regra de Sarrus: repete-se as duas primeiras colunas à direita, somam-se os produtos das diagonais principais e subtraem-se os produtos das diagonais secundárias.</string>
@@ -47,28 +46,16 @@
     <string name="understand_button">Entendi</string>
     <string name="theory_content_description">Teoria e Explicação</string>
 
-    <string name="a00">a<sub>11</sub></string>
-    <string name="a01">a<sub>12</sub></string>
-    <string name="a02">a<sub>13</sub></string>
-    <string name="a03">a<sub>14</sub></string>
-
-    <string name="a10">a<sub>21</sub></string>
-    <string name="a11">a<sub>22</sub></string>
-    <string name="a12">a<sub>23</sub></string>
-    <string name="a13">a<sub>24</sub></string>
-
-    <string name="a20">a<sub>31</sub></string>
-    <string name="a21">a<sub>32</sub></string>
-    <string name="a22">a<sub>33</sub></string>
-    <string name="a23">a<sub>34</sub></string>
-
-    <string name="a30">a<sub>41</sub></string>
-    <string name="a31">a<sub>42</sub></string>
-    <string name="a32">a<sub>43</sub></string>
-    <string name="a33">a<sub>44</sub></string>
+    <string name="a11" translatable="false">a₁₁</string>
+    <string name="a12" translatable="false">a₁₂</string>
+    <string name="a21" translatable="false">a₂₁</string>
+    <string name="a22" translatable="false">a₂₂</string>
+    <string name="b1" translatable="false">b₁</string>
+    <string name="b2" translatable="false">b₂</string>
+    <string name="c1" translatable="false">c₁</string>
+    <string name="c2" translatable="false">c₂</string>
 
     <string name="fill_all_values_error">Digite todos os valores da matriz!</string>
     <string name="z_max_format">Z (Max) = %s</string>
-    <string name="var_value_format">%s = %s</string>
-
+    <string name="var_value_format" translatable="false">%s = %s</string>
 </resources>
